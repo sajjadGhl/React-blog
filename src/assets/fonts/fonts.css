@@ -1,0 +1,14 @@
+/* Vazir */
+@font-face {
+	font-family: 'vazir';
+	src: local('Vazir'), url(./vazir/Vazir.woff) format('woff'),
+		url(./vazir/Vazir.woff2) format('woff2'), url(./vazir/Vazir.ttf) format('truetype'),
+		url(./vazir/Vazir.eot);
+}
+@font-face {
+	font-family: 'vazir';
+	font-weight: bold;
+	src: local('Vazir-bold'), url(./vazir/Vazir-Bold.woff) format('woff'),
+		url(./vazir/Vazir-Bold.woff2) format('woff2'),
+		url(./vazir/Vazir-Bold.ttf) format('truetype'), url(./vazir/Vazir-Bold.eot);
+}

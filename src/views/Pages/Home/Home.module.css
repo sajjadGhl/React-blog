@@ -1,0 +1,19 @@
+.morePosts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.morePosts a {
+    width: 25%;
+    text-align: center;
+    background-color: #fff;
+    color: #111;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+}
+
+.morePosts a:hover {
+    background-color: #111;
+    color: #fff;
+}

@@ -1,0 +1,24 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+	/* width: fit-content; */
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 30px;
+	color: #fff;
+	background: linear-gradient(-90deg, #c02942 calc(50% + 0.5ch), #000 0) left/calc(200% + 1ch)
+		100%;
+	-webkit-background-clip: text;
+	background-clip: text;
+	animation: l7 2s infinite steps(19);
+}
+.loader:before {
+	content: 'در حال بارگزاری ...';
+}
+@keyframes l7 {
+	to {
+		background-position: right;
+	}
+}

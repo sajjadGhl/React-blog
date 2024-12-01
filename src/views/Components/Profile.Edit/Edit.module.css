@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container div span {
+    display: inline-block;
+    width: 6rem;
+}
+
+.container div input {
+    width: 60%;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid transparent;
+    border-radius: 0.3rem;
+}
+
+.container div input[type="email"] {
+    direction: ltr;
+}
+.container div input[type="email"]::placeholder {
+    text-align: right;
+}
+
+.container button {
+    background-color: #fff;
+    transition: all 0.3s 0.1s;
+    border: none;
+}
+
+.container button:hover {
+    background-color: #111;
+    color: #fff;
+}

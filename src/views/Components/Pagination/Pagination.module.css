@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+    padding: 1rem 0.5rem;
+    max-width: 80%;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+}
+
+.container > div {
+}
+
+.container > div a {
+    color: inherit;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.6rem;
+    position: relative;
+    color: #8888ee;
+}
+

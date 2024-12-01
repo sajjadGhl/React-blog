@@ -1,0 +1,41 @@
+.modal {
+    background-color: #333;
+    width: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: 0;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0px;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    transition: all 0.3s 0.1s;
+}
+
+.buttons button:hover {
+    border: 1px solid transparent;
+}
+
+.danger {
+    background-color: #aa1221;
+}
+
+.danger:hover {
+    color: #aa1221;
+}
