@@ -29,7 +29,7 @@ This project working with a DRF project API. You can check it in this [link](htt
      - [Contact Us page](#contact-us-page)
 
 ## Live demo
-You can check this project live on this [link](blog.sajjadghl.ir).
+You can check this project live on this [link](http://blog.sajjadghl.ir).
 
 ## Installation
 
