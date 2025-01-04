@@ -5,7 +5,7 @@ import styles from './PostCard.module.css';
 import noImage from '../../../assets/images/no-image.jpg';
 import { Link } from 'react-router-dom';
 
-const PostCard = ({ data: { id, title, content, image, author, created_at } }) => {
+const PostCard = ({ data: { id, title, content, image, author, created_at, categories } }) => {
 	image = image || noImage;
 
 	return (
@@ -25,6 +25,12 @@ const PostCard = ({ data: { id, title, content, image, author, created_at } }) =
 					className={`btn transition ${styles.read_more}`}>
 					ادامه مطلب
 				</Link>
+			</div>
+			<div className={styles.categories}>
+				{categories.map((category, index) => (
+					<span key={index}>{category}</span>
+				))}
+				{categories.length === 0 && <span>بدون دسته بندی</span>}
 			</div>
 		</div>
 	);

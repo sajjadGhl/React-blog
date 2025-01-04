@@ -162,3 +162,9 @@ main {
 		opacity: 1;
 	}
 }
+
+@media screen and (max-width: 450px) {
+	.title::after {
+		width: 15rem;
+	}
+}

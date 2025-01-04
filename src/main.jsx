@@ -14,21 +14,19 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 );
 
 /*
-TODO ::
-	API (Using Loading component) :
-									ContactUs ✔
-									Search ✔
-									Profile (Show ✔, Edit)
-									Single Post ✔
-									Logout ✔
-									Login ✔
-									Register ✔
-									Logout => logging user out ✔
-									Posts (Pagination, limit via api, correct image urls) ✔
-									Update User via api, contextProvider update user
 
-	Light mode (on user choice - default: system)
+	Create comment permission (user can't submit comment)
+	Delete user from body of request, we send token so get the user via token
 
-	(Admin panel)
-	(API - django, Laravel)
+	(Admin panel) [download it :)]
+    
+	pages should be Responsive :
+								Menu 							✔
+								Home page (under 500px) 		✔
+								Post page (under 750px) 		✔
+								Single page (under 450px) 		✔
+								Contact us (under 700px) 		✔
+								Sign up, Login (under 400px) 	✔
+								Profile (under 650px)
+
 */

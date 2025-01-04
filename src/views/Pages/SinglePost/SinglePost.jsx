@@ -20,6 +20,8 @@ const SinglePost = () => {
 		content: '',
 		author: '',
 		created_at: '',
+		comments: [],
+		categories: [],
 	});
 
 	const [loading, setLoading] = useState(false);
@@ -44,22 +46,24 @@ const SinglePost = () => {
 		<>
 			{loading && <Loading />}
 			{!loading && (
-				<div className={styles.container}>
-					<h2 className='title'>{post.title}</h2>
-					<p>
-						<img
-							src={`${imageBaseUrl}${post.image}`}
-							alt={`Image of ${post.title}`}
-						/>
-						{post.content}
-					</p>
-					<div className={styles.info}>
-						{/* <span>{post.author}</span> */}
-						<span>{post.created_at}</span>
+				<>
+					<div className={styles.container}>
+						<h2 className='title'>{post.title}</h2>
+						<p>
+							<img
+								src={`${imageBaseUrl}${post.image}`}
+								alt={`Image of ${post.title}`}
+							/>
+							{post.content}
+						</p>
+						<div className={styles.info}>
+							{/* <span>{post.author}</span> */}
+							<span>{post.created_at}</span>
+						</div>
 					</div>
-				</div>
+					<Comments comments={post.comments} post_id={post.id} />
+				</>
 			)}
-			{/* <Comments /> */}
 		</>
 	);
 };

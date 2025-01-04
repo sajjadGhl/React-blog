@@ -45,15 +45,9 @@ const ContactUs = () => {
 						error: true,
 						errorMsg: {
 							general: response.message,
-							name:
-								response.response.data.name?.[0] ||
-								'',
-							email:
-								response.response.data.email?.[0] ||
-								'',
-							message:
-								response.response.data
-									.message?.[0] || '',
+							name: response.response.data.name?.[0] || '',
+							email: response.response.data.email?.[0] || '',
+							message: response.response.data.message?.[0] || '',
 						},
 					});
 				} else {
